@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,12 +40,35 @@
         <input type="text" id="nome" name="nome" required>
 
         <label for="contato">E-mail ou WhatsApp</label>
-    
+        <input type="tipo_equipamento">Tipo de equipamento:</label> 
+        <select id="tipo_equipamento" name="tipo_equipamento" required>
+            <option value="">Seleciona...</option>
+            <option value="computador">Computador/ Notebook</option>
+            <option value="celular"> Celular/ Tablet</option>
+            <option value="perifereico"> Periféricos (Teclado, Mouse, Cabos)</option>
+            <option value="bateria"> Pilhas e Baterias</option>
+            <option value="outro">Outros (Especifique abaixo) </option>
+
+        </select>
+         <label for="estado">Estado do Equipmaneto:
+            <select id="estado" name="estado" required>
+                <option value="funcionando"></option>
+                <option value="estragado">Estragado (Descarte/ Reciclagem)</option>
+
+            </select>
+
+
+            <label for="descricao">Descrição(Marca / modelo / problema se houver): </label>
+            <textarea id="descricao" name="descricao" rows="4"></textarea>
+
+            <button type="submit">Registrar Equipamento</button>
+         </label>
+
     
     
     
     </form>
-
+</div>
 
 </body>
 
